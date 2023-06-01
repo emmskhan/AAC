@@ -6,14 +6,17 @@
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   line-height: 1.5;
+  font-size: 16px; /* Adjust this value as needed */
 }
 .container {
   display: grid;
   grid-template-rows: auto auto 1fr;
-  min-height: 100vh;
+  grid-template-columns: 1fr;
   justify-items: center; /* Added to horizontally center the container */
+  min-height: 100vh;
   padding: 0 40px;
   box-sizing: border-box;
+  float:left;
 }
 header .logo-container {
   display: flex;
@@ -33,6 +36,7 @@ header .logo-container h2 {
   color: black; /* Set the desired color for the h2 */
   margin: 0;
   margin-top: 20px;
+  font-size: 1.4rem;
 }
 .navigation,
 .feature h3 a {
@@ -143,20 +147,23 @@ header .logo-container h2 {
 
 .feature h1 {
   color: cornflowerblue;
+  font-size: 2rem;
 }
 
 .feature h3 {
   color:cornflowerblue;
   margin-bottom: 10px;
+  font-size: 1.2rem;
 }
 .feature h4 {
   font: bold;
+  font-size: 1rem;
   color:cornflowerblue;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .feature p {
-  font-size: 14px;
+  font-size: 1.1rem;
   margin-bottom: 10px;
   flex-grow: 1;
 }
@@ -176,13 +183,16 @@ section#calendar {
   box-shadow: 0 0 10px gray;
 }
 footer {
-  background-color: #f5f5f5;
+  background-color: white;
+  font-size: 1rem;
   padding: 10px;
   text-align: center;
 }
 .slide-container {
   display: grid;
   grid-template-rows: auto 1fr; /* First row auto-sized, second row takes remaining space */
+  grid-template-columns: auto;
+  float: left;
   gap: 20px; /* Gap between rows and columns */
 }
 .slide-container h3 {
@@ -191,6 +201,7 @@ footer {
 }
 .column {
   text-align: center;
+  font-size: 1rem
   margin-top: 10px;
 }
 
@@ -207,4 +218,7 @@ ul {
 
 ul li {
   margin-bottom: 10px;
+}
+p {
+  font-size: 1.1rem;
 }
