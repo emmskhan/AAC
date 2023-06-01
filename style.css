@@ -157,13 +157,13 @@ header .logo-container h2 {
 }
 .feature h4 {
   font: bold;
-  font-size: 1rem;
+  font-size: 0.8rem;
   color:cornflowerblue;
   margin-bottom: 10px;
 }
 
 .feature p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   margin-bottom: 10px;
   flex-grow: 1;
 }
@@ -190,19 +190,11 @@ footer {
 	background-color: #f9f9f9;
 	padding: 20px;
 }
-
-.logo-footer img {
-	max-width: 50px; /* Adjust the value as needed */
-	height: auto;
-	transition: transform 0.3s, filter 0.3s;
-}
-
 .copywriting {
 	font-size: 14px;
 	text-align: right; /* Added property */
 	position: relative;
 }
-
 .copywriting::after {
 	content: " - All rights reserved";
 	position: absolute;
@@ -242,7 +234,4 @@ ul {
 
 ul li {
   margin-bottom: 10px;
-}
-p {
-  font-size: 1.1rem;
 }
