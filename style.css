@@ -182,11 +182,35 @@ section#calendar {
   color: rgb(7, 6, 6);
   box-shadow: 0 0 10px gray;
 }
+/* Footer styles */
 footer {
-  background-color: white;
-  font-size: 1rem;
-  padding: 10px;
-  text-align: center;
+	display: grid;
+	grid-template-columns: 1fr auto; /* Updated property */
+	align-items: center; /* Added property */
+	background-color: #f9f9f9;
+	padding: 20px;
+}
+
+.logo-footer img {
+	max-width: 50px; /* Adjust the value as needed */
+	height: auto;
+	transition: transform 0.3s, filter 0.3s;
+}
+
+.copywriting {
+	font-size: 14px;
+	text-align: right; /* Added property */
+	position: relative;
+}
+
+.copywriting::after {
+	content: " - All rights reserved";
+	position: absolute;
+	bottom: -18px;
+	left: 0;
+	right: 0;
+	opacity: 0;
+	transition: opacity 0.3s;
 }
 .slide-container {
   display: grid;
@@ -201,7 +225,7 @@ footer {
 }
 .column {
   text-align: center;
-  font-size: 1rem
+  font-size: 1rem;
   margin-top: 10px;
 }
 
