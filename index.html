@@ -29,8 +29,10 @@
     <div class="container">
         <header>
             <div class="logo-container">
+                <a href="index.html">
                     <img src="AAChatt_Logo.png" alt="Annoor Academy Logo">
-                    <h2>Student and Parent Resources</h2>
+                  </a>
+                  <h2>Student and Parent Resources</h2>
             </div>
         </header>
         <nav>
@@ -43,7 +45,6 @@
                 <li><a href="#studies-weekly">Studies Weekly</a></li>
                 <li><a href="#mcgraw-hill">McGraw-Hill</a></li>
                 <li><a href="#sora">Sora</a> </li>
-                <li><a href="#calendar">School Calendar</a></li>
             </ul>
         </nav>
         <main>
@@ -58,15 +59,21 @@
                       </div>
                     </div>
                     <div class="column">
-                      <h3>Supply Lists</h3>
-                      <ul>
-                        <li><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vSWkXMkTUnI3anXLN10Rlu2JASwobOG8KW-j_eOYRkXiylMXy1K_YdGZZlglaS_tXy6GJ8XtRz56HeH/pubhtml?gid=0&single=true">Pre-k Supply List</a></li>
-                        <li><a href="https://docs.google.com/document/d/e/2PACX-1v..." target="_blank">Kindergarten Supply List</a></li>
-                        <li><a href="https://docs.google.com/document/d/e/2PACX-1v..." target="_blank">First Grade Supply List</a></li>
-                        <li><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTd-DMB4mZb5O9WwFM7ONRLZxpEFPxDEOsDJW57x-_ooOl4YGxvCzKcI0x36oThPc5lt7NyrFtNJLfI/pubhtml?widget=true&amp;headers=false">Second Grade Supply List</a></li>
-                        <li><a href="https://docs.google.com/document/d/e/2PACX-1v..." target="_blank">Third Grade Supply List</a></li>
-                        <li><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQCZPH8yxPAWiUxVz167PQDRWDoOsyZTAAkIlK7myF2Dt0uc55QhbX74t2AjBkzbUXbVnduxtmC_0dy/pubhtml?gid=0&single=true">Upper Elementary and Middle School Supply List</a></li>
-                      </ul>
+                        <h3>Important Links</h3>
+                        <div class="inner-column">
+                            <h5><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQX67CVVQw9QPREcEUx4LPQsWKFAUOzWpZej-ilGF6sppjeYLFSYzp5zrOb_AvwDQ/pubhtml?gid=1977698950&single=true" target="_blank">School Calendar</a></h5>
+                        </div>
+                        <div class="inner-column">
+                            <h3>Supply lists</h3>
+                            <ul>
+                                <li><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vSWkXMkTUnI3anXLN10Rlu2JASwobOG8KW-j_eOYRkXiylMXy1K_YdGZZlglaS_tXy6GJ8XtRz56HeH/pubhtml?gid=0&single=true" target="_blank">Pre-k Supply List</a></li>
+                                <li><a href="https://docs.google.com/document/d/e/2PACX-1v..." target="_blank">Kindergarten Supply List</a></li>
+                                <li><a href="https://docs.google.com/document/d/e/2PACX-1v..." target="_blank">First Grade Supply List</a></li>
+                                <li><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTd-DMB4mZb5O9WwFM7ONRLZxpEFPxDEOsDJW57x-_ooOl4YGxvCzKcI0x36oThPc5lt7NyrFtNJLfI/pubhtml?widget=true&amp;headers=false" target="_blank">Second Grade Supply List</a></li>
+                                <li><a href="https://docs.google.com/document/d/e/2PACX-1v..." target="_blank">Third Grade Supply List</a></li>
+                                <li><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQCZPH8yxPAWiUxVz167PQDRWDoOsyZTAAkIlK7myF2Dt0uc55QhbX74t2AjBkzbUXbVnduxtmC_0dy/pubhtml?gid=0&single=true" target="_blank">Upper Elementary and Middle School Supply List</a></li>
+                            </ul>
+                        </div>
                     </div>
                   </div>
                 </div>
@@ -225,11 +232,6 @@ window.onload = function () {
 window.addEventListener('DOMContentLoaded', function () {
     document.querySelector('.slide-container').style.display = 'block';
 });
-
-function showCalendar() {
-    var calendarIframe = document.getElementById("calendar-iframe");
-    calendarIframe.src = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQX67CVVQw9QPREcEUx4LPQsWKFAUOzWpZej-ilGF6sppjeYLFSYzp5zrOb_AvwDQ/pubhtml?gid=1977698950&single=true&widget=true&headers=false";
-}
 
     </script>
     <script src="https://apis.google.com/js/platform.js" async defer></script> <!-- Add this line -->

@@ -39,7 +39,8 @@ header .logo-container h2 {
   font-size: 1.4rem;
 }
 .navigation,
-.feature h3 a {
+.feature h3 a,
+.inner-column h5 a {
   display: flex;
   justify-content: center;
   margin-bottom: 30px;
@@ -50,12 +51,14 @@ header .logo-container h2 {
 }
 
 .navigation li,
-.feature h3 a {
+.feature h3 a,
+.inner-column h5 a {
   margin: 0 10px;
 }
 
 .navigation li a,
-.feature h3 a {
+.feature h3 a,
+.inner-column h5 a {
   position: relative;
   display: inline-block;
   padding: 10px 20px;
@@ -66,12 +69,14 @@ header .logo-container h2 {
 }
 
 .navigation li a:hover,
-.feature h3 a:hover {
+.feature h3 a:hover,
+.inner-column h5 a:hover {
   color: orange; /* Set the text color for the hovered navigation item */
 }
 
 .navigation li a:before,
-.feature h3 a:before {
+.feature h3 a:before,
+.inner-column h5 a:before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -85,7 +90,8 @@ header .logo-container h2 {
 }
 
 .navigation li a:hover:before,
-.feature h3 a:hover:before {
+.feature h3 a:hover:before,
+.inner-column h5 a:hover:before {
   transform: scaleX(1); /* Expand the underline on hover */
 }
 
@@ -103,7 +109,8 @@ header .logo-container h2 {
 }
 
 .navigation li a:hover:after,
-.feature h3 a:hover:after {
+.feature h3 a:hover:after,
+.inner-column h5 a:hover:after {
   transform: scaleX(1); /* Expand the second underline on hover */
 }
 
@@ -150,7 +157,8 @@ header .logo-container h2 {
   font-size: 2rem;
 }
 
-.feature h3 {
+.feature h3,
+.inner-column h5 {
   color:cornflowerblue;
   margin-bottom: 10px;
   font-size: 1.2rem;
@@ -207,9 +215,22 @@ footer {
 .slide-container {
   display: grid;
   grid-template-rows: auto 1fr; /* First row auto-sized, second row takes remaining space */
-  grid-template-columns: auto;
   float: left;
-  gap: 20px; /* Gap between rows and columns */
+  gap: 10px; /* Gap between rows and columns */
+}
+.slide-container .row {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns in the second row */
+  gap: 20px; /* Gap between columns */
+}
+
+.slide-container .row .column {
+  display: flex;
+  flex-direction: column;
+}
+
+.slide-container .row .column .inner-column {
+  margin-bottom: 20px; /* Add spacing between the inner columns */
 }
 .slide-container h3 {
   text-align: center;
@@ -234,4 +255,7 @@ ul {
 
 ul li {
   margin-bottom: 10px;
+}
+.column h3 {
+  color:cornflowerblue;
 }
