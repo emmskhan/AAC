@@ -10,7 +10,7 @@ body {
 }
 .container {
   display: grid;
-  grid-template-rows: auto auto 1fr;
+  grid-template-rows: auto auto 1fr auto;
   grid-template-columns: 1fr;
   justify-items: center; /* Added to horizontally center the container */
   min-height: 100vh;
@@ -38,6 +38,10 @@ header .logo-container h2 {
   margin-top: 20px;
   font-size: 1.4rem;
 }
+/* Remove underline from the link */
+header .logo-container a {
+  text-decoration: none;
+}
 .navigation,
 .feature h3 a,
 .inner-column h5 a {
@@ -46,7 +50,7 @@ header .logo-container h2 {
   margin-bottom: 30px;
   margin-top: 30px;
   list-style: none;
-  background-color: rgb(39, 55, 84); /* Set the background color for the navigation */
+  background-color: rgb(39, 65, 84); /* Set the background color for the navigation */
   padding: 10px; /* Add some padding for visual spacing */
 }
 
@@ -156,7 +160,12 @@ header .logo-container h2 {
   color: cornflowerblue;
   font-size: 2rem;
 }
-
+/* CSS for the "Scope and Sequence" heading */
+.feature h2 {
+  color: cornflowerblue; /* Set the color for the heading */
+  font-size: 1.5rem; /* Adjust the font size as needed */
+  margin-top: 10px; /* Add spacing between the previous content and the heading */
+}
 .feature h3,
 .inner-column h5 {
   color:cornflowerblue;
@@ -177,12 +186,6 @@ header .logo-container h2 {
 }
 .feature p a {
   color: red;
-}
-#calendar-container {
-  width: 100%;
-}
-section#calendar {
-  width: 100%;
 }
 
 /* Pseudo-classes */
@@ -244,7 +247,7 @@ footer {
 
 .row {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Two equal-sized columns */
+  grid-template-columns: 1fr 1fr; /* first columns wider */
   gap: 20px; /* Gap between columns */
 }
 ul {
@@ -258,4 +261,69 @@ ul li {
 }
 .column h3 {
   color:cornflowerblue;
+}
+/* Add styles for the flex container */
+.flex-container,
+.scope-sequence-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* Add styles for each flex column */
+.flex-column {
+  flex-basis: calc(25% - 20px); /* Adjust the width of each column as needed */
+}
+
+/* Style the headings of each flex column */
+.flex-column h4 {
+  color: cornflowerblue;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+/* Style the links inside each flex column */
+.flex-column ul,
+.feature ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.flex-column ul li,
+.feature ul li, {
+  margin-bottom: 5px;
+}
+
+.flex-column ul li a,
+.feature ul li a {
+  color: red;
+  text-decoration: none;
+}
+
+.flex-column ul li a:hover,
+.feature ul li a:hover {
+  text-decoration: underline;
+}
+.flex-column p {
+  font-size: 1rem;
+}
+/* Style for the links within the list items */
+.saxon-links li {
+  margin-bottom: 5px;
+}
+
+.saxon-links li a {
+  display: inline-block;
+  padding: 5px 10px;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+/* Hover effect for the links */
+.saxon-links li a:hover {
+  background-color: orange;
 }
