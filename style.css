@@ -16,10 +16,8 @@ body {
   min-height: 100vh;
   padding: 0 40px;
   box-sizing: border-box;
-  float: left;
+  align-items: center;
 }
-
-/* Other styles (unchanged) */
 
 /* You can keep the other styles in .container class unchanged */
 
@@ -48,8 +46,7 @@ header .logo-container a {
   text-decoration: none;
 }
 .navigation,
-.feature h3 a,
-.inner-column h5 a {
+.feature h3 a {
   display: flex;
   justify-content: center;
   margin-bottom: 30px;
@@ -60,14 +57,12 @@ header .logo-container a {
 }
 
 .navigation li,
-.feature h3 a,
-.inner-column h5 a {
+.feature h3 a {
   margin: 0 10px;
 }
 
 .navigation li a,
-.feature h3 a,
-.inner-column h5 a {
+.feature h3 a {
   position: relative;
   display: inline-block;
   padding: 10px 20px;
@@ -78,8 +73,7 @@ header .logo-container a {
 }
 
 .navigation li a:hover,
-.feature h3 a:hover,
-.inner-column h5 a:hover {
+.feature h3 a:hover {
   color: orange; /* Set the text color for the hovered navigation item */
 }
 
@@ -122,6 +116,28 @@ header .logo-container a {
 .inner-column h5 a:hover:after {
   transform: scaleX(1); /* Expand the second underline on hover */
 }
+/* Style for the important links list */
+.important-links {
+  list-style: none; /* Remove default list styles */
+  padding: 0; /* Remove padding to avoid unnecessary spacing */
+}
+
+.important-links li {
+  margin-bottom: 10px; /* Add spacing between list items */
+}
+
+.important-links li a {
+  display: block;
+  padding: 10px 20px;
+  color: red;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.important-links li a:hover {
+  color: orange;
+}
 
 
 .features {
@@ -142,7 +158,7 @@ header .logo-container a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-bottom: 20px;
+  margin-bottom: 100px;
   box-shadow: 0 0 5px gray;
   border: none;
 }
@@ -200,59 +216,52 @@ header .logo-container a {
 /* Footer styles */
 /* Add the following CSS rules for the footer */
 footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #f9f9f9;
+  text-align: center;
   padding: 20px;
-  position: absolute;
+  position: fixed; /* Use fixed positioning to keep the footer at the bottom of the viewport */
   bottom: 0;
   left: 0;
   right: 0;
+  height: 80px; /* You can adjust the height as needed */
 }
 
 .footer-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
   max-width: 1200px;
-}
-
-.home-link {
-  margin-right: auto;
+  margin: 0 auto; /* Center the content within the footer */
 }
 
 .copywriting {
   font-size: 14px;
-  text-align: right;
-}
-
-.copywriting::after {
-  content: " - All rights reserved";
-  opacity: 1;
 }
 
 .slide-container {
-  display: grid;
-  grid-template-rows: auto 1fr; /* First row auto-sized, second row takes remaining space */
-  float: left;
-  gap: 10px; /* Gap between rows and columns */
+  width: 100%;
+  display: flex; /* Change to flex */
+  flex-direction: column; /* Arrange items vertically */
+  gap: 10px; /* Gap between rows */
+  padding: 0 10px;
 }
+
 .slide-container .row {
-  display: grid;
-  grid-template-columns: 1fr 1fr; /* Two columns in the second row */
+  display: flex; /* Change to flex */
   gap: 20px; /* Gap between columns */
 }
 
 .slide-container .row .column {
+  flex: 2; /* Make the "Announcements" column wider */
   display: flex;
   flex-direction: column;
 }
 
+.slide-container .row .column:nth-child(2) {
+  flex: 1; /* Make the "Important Links" column narrower */
+}
+
 .slide-container .row .column .inner-column {
   margin-bottom: 20px; /* Add spacing between the inner columns */
+  padding: 10px;
 }
+
 .slide-container h3 {
   text-align: center;
   margin-bottom: 10px;
