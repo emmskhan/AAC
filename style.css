@@ -16,8 +16,9 @@ body {
   min-height: 100vh;
   padding: 0 40px;
   box-sizing: border-box;
-  margin-left: 60px;
+  margin-left: 20px;
   margin-right: auto;
+  max-width: 1200 px;
 }
 
 /* You can keep the other styles in .container class unchanged */
@@ -27,6 +28,12 @@ header .logo-container {
   align-items: center;
   margin-bottom: 10px; /* Add spacing below the logo and h2 */
   margin-top: 20px;
+  font-size: 3rem;
+}
+@media screen and (max-width: 767px) {
+  header .logo-container h2 {
+    font-size: 2rem; /* Adjust the font size for smaller screens */
+  }
 }
 
 header .logo-container img {
@@ -53,16 +60,14 @@ header .logo-container a {
   padding: 10px;
   margin-bottom: 30px;
   margin-top: 30px;
-  margin-left: 20px;
-  margin-right: auto;
 }
 
 /* Use Flexbox for the navigation links (ul) to keep them in a horizontal layout */
 .navigation ul {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   list-style: none;
-  padding: 0; /* Remove default padding for ul element */
+  padding: 0; /* Remove default padding for ul element */;
 }
 
 /* Center the feature headings on all screens */
@@ -76,12 +81,23 @@ header .logo-container a {
   padding: 10px; /* Add some padding for visual spacing */
 }
 
-.navigation li,
+.navigation li {
+  margin: 0 5px; /* Adjust the spacing between navigation items */
+}
+
+.navigation li a {
+  position: relative;
+  display: inline-block;
+  padding: 8px 16px; /* Increase the padding for easier tapping on touch devices */
+  font-size: 1.1rem; /* Increase the font size for better visibility */
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
 .feature h3 a {
   margin: 0 10px;
 }
-
-.navigation li a,
 .feature h3 a {
   position: relative;
   display: inline-block;
@@ -254,17 +270,18 @@ footer {
   font-size: 14px;
 }
 
+/* Default styles for larger screens */
 .slide-container {
-  width: 100%;
-  display: flex; /* Change to flex */
-  flex-direction: column; /* Arrange items vertically */
-  gap: 10px; /* Gap between rows */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
   padding: 0 10px;
 }
 
 .slide-container .row {
-  display: flex; /* Change to flex */
-  gap: 20px; /* Gap between columns */
+  display: flex; /* Keep it as flex */
+  flex-wrap: wrap; /* Allow flex items to wrap to the next line */
+  gap: 20px;
 }
 
 .slide-container .row .column {
@@ -275,6 +292,7 @@ footer {
 
 .slide-container .row .column:nth-child(2) {
   flex: 1; /* Make the "Important Links" column narrower */
+  text-align: center;
 }
 
 .slide-container .row .column .inner-column {
@@ -285,6 +303,17 @@ footer {
 .slide-container h3 {
   text-align: center;
   margin-bottom: 10px;
+}
+/* Media query for smaller screens */
+@media screen and (max-width: 767px) {
+  .slide-container .row {
+    flex-direction: column; /* Stack columns for smaller screens */
+  }
+}
+
+  .slide-container .row .column {
+    flex: 1; /* Make both columns take equal width */
+  }
 }
 .column {
   text-align: center;
