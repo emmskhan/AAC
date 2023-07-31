@@ -16,7 +16,8 @@ body {
   min-height: 100vh;
   padding: 0 40px;
   box-sizing: border-box;
-  align-items: center;
+  margin-left: 60px;
+  margin-right: auto;
 }
 
 /* You can keep the other styles in .container class unchanged */
@@ -45,7 +46,26 @@ header .logo-container h2 {
 header .logo-container a {
   text-decoration: none;
 }
-.navigation,
+.navigation {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(39, 65, 84);
+  padding: 10px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  margin-left: 20px;
+  margin-right: auto;
+}
+
+/* Use Flexbox for the navigation links (ul) to keep them in a horizontal layout */
+.navigation ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0; /* Remove default padding for ul element */
+}
+
+/* Center the feature headings on all screens */
 .feature h3 a {
   display: flex;
   justify-content: center;
@@ -346,6 +366,7 @@ ul li {
   padding: 5px 10px;
   color: white;
   text-decoration: none;
+  font-size: large;
   border-radius: 5px;
   transition: background-color 0.3s;
 }
@@ -354,3 +375,19 @@ ul li {
 .saxon-links li a:hover {
   background-color: orange;
 }
+/* Center the container on smaller screens */
+@media screen and (max-width: 767px) {
+  .container {
+    justify-content: center;
+    align-items: center;
+  }
+}
+/* Center the navigation on smaller screens */
+@media screen and (max-width: 767px) {
+  .navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
