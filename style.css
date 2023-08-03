@@ -230,8 +230,14 @@ header .logo-container a {
 }
 .feature h4 {
   font: bold;
-  font-size: 0.8rem;
+  font-size: 1.1rem;
   color:cornflowerblue;
+  margin-bottom: 10px;
+}
+.feature h4 {
+  font: bold;
+  font-size: 1.1rem;
+  color:orange;
   margin-bottom: 10px;
 }
 
@@ -418,5 +424,27 @@ ul li {
     justify-content: center;
     align-items: center;
   }
+}
+/* Style for the download icons */
+.download-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+}
+.download-icons a {
+  display: inline-block;
+  margin: 5px;
+}
+
+.download-icons a img,
+.app-store-icon img {
+  width: 150px; /* Adjust this value to make the icon smaller or larger */
+  height: auto;
+}
+.download-icons a img,
+.google-play-icon img {
+  width: 150px; /* Adjust this value to make the icon smaller or larger */
+  height: auto;
 }
 
