@@ -276,47 +276,7 @@ footer {
 .copywriting {
   font-size: 14px;
 }
-.contact-me {
-  padding: 20px;
-  background-color: #f5f5f5;
-  border-radius: 5px;
-}
 
-.contact-me h4 {
-  color: cornflowerblue;
-  font-size: 1.1rem;
-  margin-bottom: 10px;
-}
-
-.contact-me form {
-  display: flex;
-  flex-direction: column;
-}
-
-.contact-me input,
-.contact-me textarea {
-  margin-bottom: 10px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-.contact-me textarea {
-  resize: vertical; /* Allow vertical resizing of the textarea */
-}
-
-.contact-me button {
-  padding: 10px;
-  background-color: orange;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.contact-me button:hover {
-  background-color: darkorange;
-}
 /* Default styles for larger screens */
 .slide-container {
   display: grid;
@@ -488,3 +448,5 @@ ul li {
   width: 150px; /* Adjust this value to make the icon smaller or larger */
   height: auto;
 }
+
+
