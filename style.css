@@ -448,5 +448,12 @@ ul li {
   width: 150px; /* Adjust this value to make the icon smaller or larger */
   height: auto;
 }
+/* Adjust the margin-bottom of .instruction-text */
+.instruction-text {
+  margin-bottom: 20px; /* Increase the space between instruction-text and headings */
+}
 
-
+/* Add margin-top to h3 headings */
+.column h3 {
+  margin-top: 30px; /* Adjust as needed */
+}
