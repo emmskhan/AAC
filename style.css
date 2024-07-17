@@ -327,6 +327,39 @@ footer {
   font-size: 1rem;
   margin-top: 10px;
 }
+.row {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  justify-content: center; /* Center align items horizontally */
+  gap: 20px; /* Adjust the vertical gap between items */
+}
+
+.row p {
+  margin-bottom: 20px; /* Add space below the paragraph */
+}
+
+.inner-column {
+  text-align: center; /* Center align text within each inner-column */
+}
+
+.inner-column h3 {
+  margin-bottom: 10px; /* Add spacing below each heading */
+}
+
+.important-links {
+  list-style: none; /* Remove default list styles */
+  padding: 0; /* Remove padding to avoid unnecessary spacing */
+  margin-top: 10px; /* Add space above the list */
+}
+
+.important-links li {
+  margin-bottom: 10px; /* Add spacing between list items */
+}
+
+.inner-column p {
+  margin-top: 10px; /* Add space above the paragraph */
+}
+
 
 .row {
   display: grid;
@@ -465,4 +498,8 @@ ul li {
 /* Add margin-top to h3 headings */
 .column h3 {
   margin-top: 30px; /* Adjust as needed */
+}
+.container h3 {
+  color: cornflowerblue;
+  font-weight: bold;
 }
