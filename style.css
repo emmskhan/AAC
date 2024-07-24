@@ -298,7 +298,7 @@ footer {
 
 .slide-container .row .column:nth-child(2) {
   flex: 1; /* Make the "Important Links" column narrower */
-  text-align: center;
+  text-align: left;
 }
 
 .slide-container .row .column .inner-column {
