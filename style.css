@@ -166,7 +166,7 @@ header .logo-container a {
 .important-links li a {
   display: block;
   padding: 10px 10px;
-  color: red;
+  color: black;
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s;
@@ -190,7 +190,7 @@ header .logo-container a {
   text-align: center;
   padding: 30px;
   background-color: white;
-  transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.3s, imcolor 0.3s;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
